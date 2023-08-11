@@ -1,42 +1,266 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+h1,h2,h3,h4, p, span {
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+  }
+/**/
+.app{
+  width: 10;
+  height: 100vh;
+  background-size: cover; 
+  background-position: center;
+  padding: 1rem;
+  overflow: hidden;
+    justify-content: center;
+  align-items: center;
+  /* max-width: 700PX; */
+  /* margin: auto; */
+   box-sizing: border-box;
+  } 
+
+
+/**/
+.loading img{
+  display: block;
+  width: 100%;
+ }
+
+/**/
+.loading {
+  /* background-color: red; */
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: rgba(255, 0, 0, 0.178);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 700PX;
+  margin: auto;
+  height: 95vh;
+} 
+
+
+
+ 
+/*  *************************************       Titulo " WEATHER app"  W y R */
+
+
+
+/*  Contenedor " WEATHER app"  */
+.container__weather {
+  background-color: rgb(176, 167, 219);
+  width: 100%;
+  padding: 1em;
+  display: grid;
+  justify-content: center;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  
   }
-  to {
-    transform: rotate(360deg);
+
+
+/*Titulo " WEATHER app"  W y R */
+.container__weather span{
+  text-align: center;
+  font-size: 130%;
+  color: rgb(179, 83, 14);
+
+}
+/*Titulo " WEATHER app  "eathe" */
+.container__weather h1{
+ margin-top: 5%;
+  color: rgb(244, 141, 8);
+  text-shadow: 2px 3px  5px rgb(0, 0, 0);
+  font-size:200%;
+  font-weight: 2px;
+}
+
+.container__weather h2{
+  /* margin-top: 0%; */
+  color: rgb(235, 172, 12);
+  text-shadow: 2px 3px  5px rgb(0, 0, 0);
+  font-size:150%;
+  font-weight: 2px;
+
+}
+
+
+
+
+
+/* *******FIN   Titulo " WEATHER app"  W y R */
+
+
+/**************************************************************Titulo "Localidad "Rio Cuarto" y pais" */
+.title__city{
+ margin: 5%;
+  color: rgb(13, 13, 14);
+  text-shadow: 1px 1px  3px  rgb(251, 250, 250);
+  font-size:150%;
+  font-weight: 2px;
+}
+
+
+.container__body{
+  background-color: rgb(81, 74, 88);
+  width: 100%;
+/* display: flex; */
+flex-direction: column;
+}
+
+.container__body-top{
+  background-color: rgb(226, 173, 24);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+
+}
+
+.container__body-top-description{
+  background-color: red;
+  text-align: center;
+  color: rgb(235, 172, 12);
+  text-shadow: 2px 3px  5px rgb(0, 0, 0);
+  font-size:150%;
+  font-weight: 2px;
+
+}
+
+.container__body-top-temper_icon{
+  background-color: rgb(77, 175, 95);
+  display: flex;
+
+}
+
+.temp__c_f{
+background-color: rgb(41, 178, 33);
+width: 50%;
+justify-content: center;
+text-align: center;
+margin: auto;
+color: rgb(235, 172, 12);
+  text-shadow: 2px 3px  5px rgb(0, 0, 0);
+  font-size:150%;
+  font-weight: 2px;
+}
+
+.icon__description{
+  background-color: blue;
+  width: 50%;
+  
+}
+
+.container__info-weather {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+ padding: 1em;
+ gap: 1em;
+}
+
+.info__weather{
+background-color: aqua;
+padding: .5em;
+text-align: center;
+display: flex;
+flex-direction: column;
+box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+width: 100%;
+}
+
+
+
+
+
+.icon_data{
+  /* background-color: rebeccapurple; */
+  display: flex;
+  padding: .5em;
+  gap: .5em;
+
+}
+
+.info__weather span{
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+
+/**************************************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+@media (min-width: 700px)  {
+   
+   
+  .App{
+     
+      gap: .5rem;
+      justify-content: center ;
+      max-width: 1024; 
+      
   }
+
+  .container{
+   
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024PX;
+    margin: auto;
+  }
+ 
+  
+    /**/
+   .card {
+    background-color: rgba(144, 141, 141, 0.609); 
+    padding:.5rem;
+    /* width:80%; */
+    margin: auto ;
+    margin-top: 1rem;
+    gap: 1rem;
+    max-width: 500PX;
+    max-height: 500px;
+   }
+
+ /* Titulo de la temperatura- Numeros*/
+ .card__body h2{
+  margin-top: 30px;
+ color: rgb(241, 133, 10);
+ font-size: 250%;
+ text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
 }
 
-.card {
-  padding: 2em;
+/*Propiedades del boton*/
+button{
+  width: 150px;
+font-size: 75%;
+font-weight: bold;
+color: rgb(213, 43, 43);
+padding: 5px;
+border: 1px solid var(--primary-color);
+border-radius: 5px;   
+box-shadow: 2PX 2PX 3px rgba(0, 0, 0, 0.3);
+border-bottom: none;
+margin-top: 25px;
 }
 
-.read-the-docs {
-  color: #888;
+
 }
