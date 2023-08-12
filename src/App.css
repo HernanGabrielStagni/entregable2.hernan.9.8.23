@@ -16,8 +16,7 @@ h1,h2,h3,h4, p, span {
   overflow: hidden;
     justify-content: center;
   align-items: center;
-  /* max-width: 700PX; */
-  /* margin: auto; */
+  margin: auto;
    box-sizing: border-box;
   } 
 
@@ -31,7 +30,7 @@ h1,h2,h3,h4, p, span {
 /**/
 .loading {
   /* background-color: red; */
-  color: aliceblue;
+  color: white;
   display: flex;
   flex-direction: column;
   width: 250px;
@@ -44,12 +43,12 @@ h1,h2,h3,h4, p, span {
   /* background-color: rgba(255, 0, 0, 0.178); */
   display: flex;
   flex-direction: column;
-  padding: 0rem;
+  padding: 0rem ;
   justify-content: center;
   align-items: center;
-  max-width: 700PX;
+ 
   margin: auto;
-  height: 95vh;
+  height: 100vh;
   gap: 1em;
 } 
 
@@ -68,7 +67,7 @@ h1,h2,h3,h4, p, span {
   display: grid;
   justify-content: center;
   text-align: center;
-  margin-top: -30%;
+  /* margin-top: -20px; */
   
   }
 
@@ -76,24 +75,24 @@ h1,h2,h3,h4, p, span {
 /*Titulo " WEATHER app"  W y R */
 .container__weather span{
   text-align: center;
-  font-size: 130%;
+  font-size: 3rem;
   color: rgb(179, 83, 14);
 
 }
 /*Titulo " WEATHER app  "eathe" */
 .container__weather h1{
- margin-top: 5%;
+ margin-top: 1em;
   color: rgb(244, 141, 8);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
-  font-size:200%;
-  font-weight: 2px;
+  font-size:2.2rem;
+  font-weight: 1px;
 }
 /*  **  texto App  **  */
 .container__weather h2{
   /* margin-top: 0%; */
   color: rgb(235, 172, 12);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
-  font-size:150%;
+  font-size:1.5rem;
   font-weight: 2px;
 
 }
@@ -113,7 +112,7 @@ h1,h2,h3,h4, p, span {
  background-color: rgba(194, 202, 209, 0.13);
   color: rgb(13, 13, 14);
   text-shadow: 1px 1px  3px  rgb(251, 250, 250);
-  font-size:150%;
+  font-size:1.3rem;
   font-weight: 2px;
   margin-bottom: -0.5em;
   margin-top: -0.5em;
@@ -135,7 +134,8 @@ gap: 1em;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: .5em;
+  gap: .5em;
   border-radius: 25px;
 
 }
@@ -146,8 +146,9 @@ gap: 1em;
   text-align: center;
   color: rgb(235, 172, 12);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
-  font-size:150%;
+  font-size:2rem;
   font-weight: 2px;
+
 
 }
 
@@ -160,24 +161,25 @@ gap: 1em;
 /* texto grande Temperatura  cel  °C y °F*/
 .temp__c_f{
 /* background-color: rgb(115, 214, 108); */
-width: 50%;
+width: 100%;
 justify-content: center;
 text-align: center;
 margin: auto;
 color: rgb(235, 172, 12);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
-  font-size:150%;
+  font-size:2.5rem;
   font-weight: 2px;
   /* aspect-ratio: 1; */
+  padding: 0em;
 }
 /*contenedor icono del estado del tiempo grande*/
 .icon__description{
   /* background-color: rgb(39, 35, 244); */
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* aspect-ratio: 1; */
+  aspect-ratio: 1; 
 }
 
 .icon__description img{
@@ -215,7 +217,7 @@ width: calc(100%/3);
 .icon_data{
   /* background-color: rgb(233, 46, 40); */
   display: flex;
-  padding: .1em;
+  padding: .0em;
   gap: .0em;
   justify-content:space-between;
   align-items: center;
@@ -231,7 +233,7 @@ background-color: red;
 /*valor de la magnitus*/
 .info__weather span{
   color: black;
-  font-size: 105%;
+  font-size: 1rem;
   font-weight: 600;
   overflow: hidden;
   /* background-color: rgb(66, 48, 199); */
