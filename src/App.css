@@ -6,23 +6,6 @@ h1,h2,h3,h4, p, span {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 
   }
-/**/
-.app{
-  width: 10;
-  height: 100vh;
-  background-size: cover; 
-
-  background-position: center;
-  padding: .5rem;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  box-sizing: border-box;
-
-
-  } 
-
 
 /**/
 .loading img{
@@ -43,12 +26,29 @@ h1,h2,h3,h4, p, span {
   align-items: center;
   padding: 5em;
 }
+/*  ##################################################     */
+/*  ################  CONTEINERS  ##################     */
+/*  ##################################################     */
 
+/*  contenedor general con el fondo*/
+.app{
+  width: 10;
+  height: 100vh;
+  background-size: cover; 
+
+  background-position: center;
+  padding: .5rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  box-sizing: border-box;
+  } 
 
 
 /*contenedor recuadro interno del fondo*/
 .container{
-  /* background-color: rgba(255, 0, 0, 0.178); */
+  background-color: rgba(255, 0, 0, 0.178);
   display: flex;
   flex-direction: column;
   padding: 0rem ;
@@ -57,7 +57,7 @@ h1,h2,h3,h4, p, span {
  
   margin: auto;
   height: 90vh;
-  gap: 1em;
+  gap: 1.5em;
 } 
 
 
@@ -123,12 +123,14 @@ h1,h2,h3,h4, p, span {
   font-size:1.3rem;
   font-weight: 2px;
   margin-bottom: -0.5em;
-  margin-top: .5em;
+  margin-top: -1.5em;
   padding: 3px 15px;
   border-radius: 10px;
 }
-
-/* contenedor DE BODY TOP CLIMA Y BODY BOTTON INFO*/
+/* ###############################################  */
+/* ###############################################  */
+/* ###############################################  */
+/* contenedor DE "BODY TOP"+ "BODY BOTTON" */
 .container__body{
   /* background-color: rgb(81, 74, 88); */
   width: 100%;
@@ -137,8 +139,9 @@ flex-direction: column;
 gap: 1em;
 }
 
+/* contenedor  "CLIMA" + "TEMPERAT + iCONO CLIMA" */
 .container__body-top{
-  background-color: rgba(220, 220, 213, 0.441);
+  background-color: rgba(211, 211, 205, 0.272);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -200,13 +203,13 @@ width: 100%;
 }
 
 /*  #################################################################      */
-/*  #################################################################      */
+/*  ########################  SECCION DE INFORMACION  ###############      */
 /*  #################################################################      */
 
 /*contenedor de los 3 bloques de informacion*/
 .container__info-weather {
   width: 100%;
-  background-color: rgb(188, 182, 193);
+  background-color: rgba(186, 184, 187, 0.461);
   display: flex;
   overflow: hidden;
   justify-content: space-around;
@@ -217,9 +220,9 @@ width: 100%;
 }
 
 
-/*contenedor de un bloque de informacion*/
+/*contenedor de "** CADA **  bloque" de informacion*/
 .info__weather{
-/* background-color: rgb(237, 174, 86); */
+background-color: rgba(183, 177, 170, 0.493);
 padding: .3em;
 text-align: center;
 display: flex;
@@ -247,7 +250,7 @@ width: calc(100%/3);
 background-color: red;
 } */
 
-/*valor de la magnitus de la info*/
+/*valor de la TEXTO magnitus de la info*/
 .info__weather span{
   color: black;
   font-size: 1rem;
@@ -288,6 +291,30 @@ padding: .5em 1.5em;
 /********************************************/
 /********************************************/
 /********************************************/
+
+@media (min-width: 320px)  {
+
+  .container{gap: 2rem;}
+
+
+  /* "valor numerico" de la TEXTO Ej."3.82" info*/
+  .info__weather span{font-size: 1.5rem;}
+  
+  /* "unidades" de medida de la info*/
+  .info__weather h2{font-size: 1.1em;}
+  
+  /*TEXTO eJ. "PRESURE" parametro del tiempo*/
+    .info__weather h3{font-size: 1.1em;}
+
+    /*  ############  BOTON CAMBIO CELSIUS A FARAD.  ################  */
+    .btn{font-size: 1em; padding: .5em 1.5em;}
+
+}
+
+@media (min-width: 700px)  {
+}
+
+
 @media (min-width: 700px)  {
    
    
