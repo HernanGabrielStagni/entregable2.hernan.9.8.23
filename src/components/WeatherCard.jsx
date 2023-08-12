@@ -41,7 +41,7 @@ const WeatherCard = ({ weather, temperature }) => {
      {/*  *********************   ICONO CLIMA DESCRIPTION (CLEAR SKY) */}
                  <div className="icon__description">
                    <img src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt=""/>
-             </div> 
+                 </div> 
           
           </div>            
          
@@ -58,8 +58,8 @@ const WeatherCard = ({ weather, temperature }) => {
                 <span>{weather?.wind.speed}</span>
              </div>
                 
-             <h3> m/s </h3> 
-             <h3>Wind speed</h3>
+             <h2> m/s </h2> 
+             <h3>Wind S.</h3>
           </article>   
 
           <article className="info__weather">
@@ -68,18 +68,18 @@ const WeatherCard = ({ weather, temperature }) => {
              <span>{weather?.main.humidity}</span>
              </div>
                 
-             <h3>  % </h3> 
+             <h2>  % </h2> 
              <h3>Humidity</h3>
           </article>   
 
 
           <article className="info__weather">
              <div className="icon_data">
-             <img src="/icons/tabler_arrow-wave-right-down.svg" alt=""/>
-             <span>{weather?.main.pressure}</span>
+                <img src="/icons/tabler_arrow-wave-right-down.svg" alt=""/>
+                <span>{weather?.main.pressure}</span>
              </div>
                 
-             <h3>hPa</h3> 
+             <h2>hPa</h2> 
              <h3>Pressure</h3>
           </article>   
 
@@ -88,7 +88,7 @@ const WeatherCard = ({ weather, temperature }) => {
        </div>
   
    {/*  *********************   BOTON DE CAMBIO  (C a F) */}
-       <button onClick={handleChangeTemperature}>Change to {isCelsius ? "°F" : "°C"}</button>
+       <button  className="btn" onClick={handleChangeTemperature}>Change to {isCelsius ? "°F" : "°C"}</button>
        
     
     </div>

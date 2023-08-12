@@ -50,6 +50,7 @@ h1,h2,h3,h4, p, span {
   max-width: 700PX;
   margin: auto;
   height: 95vh;
+  gap: 1em;
 } 
 
 
@@ -116,8 +117,9 @@ h1,h2,h3,h4, p, span {
 .container__body{
   background-color: rgb(81, 74, 88);
   width: 100%;
-/* display: flex; */
+display: flex; 
 flex-direction: column;
+gap: 1em;
 }
 
 .container__body-top{
@@ -155,49 +157,95 @@ color: rgb(235, 172, 12);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
   font-size:150%;
   font-weight: 2px;
+  /* aspect-ratio: 1; */
 }
 
 .icon__description{
-  background-color: blue;
+  background-color: rgb(30, 25, 178);
   width: 50%;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* aspect-ratio: 1; */
 }
 
+.icon__description img{
+display: block;
+width: 100%;
+}
+
+/*contenedor de los 3 bloques de informacion*/
 .container__info-weather {
   width: 100%;
+  background-color: rgb(180, 166, 192);
   display: flex;
+  overflow: hidden;
   justify-content: space-around;
- padding: 1em;
- gap: 1em;
+  border-radius: 15px;
+
+ padding: .5em;
+ gap: .2em;
 }
 
+/*contenedor de un bloque de informacion*/
 .info__weather{
-background-color: aqua;
-padding: .5em;
+/* background-color: rgb(237, 174, 86); */
+padding: .3em;
 text-align: center;
 display: flex;
 flex-direction: column;
 box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
-width: 100%;
+width: calc(100%/3);
+/* aspect-ratio: 1; */
 }
-
-
-
-
-
+/*contenedor del icono + dato*/
 .icon_data{
-  /* background-color: rebeccapurple; */
+  background-color: rgb(233, 46, 40);
   display: flex;
-  padding: .5em;
-  gap: .5em;
+  padding: .1em;
+  gap: .0em;
+  justify-content: center;
+  align-items: center;
+  
+  
 
 }
+/*icono represemntativo de la magnitus*/
+/* .icon_data img{
+background-color: red;
+} */
 
+/*valor de la magnitus*/
 .info__weather span{
   color: black;
-  font-size: 25px;
+  font-size: 105%;
   font-weight: 600;
+  overflow: hidden;
+  /* background-color: rgb(66, 48, 199); */
   }
+  
+  /*unidades de medida*/
+  .info__weather h2{
+    /* background-color: rgb(94, 182, 64); */
+    font-size: 15px;
+    font-weight: 800;
+    }
+  
+  /*parametro del tiempo*/
+    .info__weather h3{
+    /* background-color: rgb(94, 182, 64); */
+    font-size: 13px;
+    
+    }
+    
+
+    
+.btn{
+background-color:white;
+color: blue;
+border-radius: 25px;   
+    }
+
 
 
 /**************************************************************/
