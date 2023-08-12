@@ -44,7 +44,7 @@ h1,h2,h3,h4, p, span {
   /* background-color: rgba(255, 0, 0, 0.178); */
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0rem;
   justify-content: center;
   align-items: center;
   max-width: 700PX;
@@ -188,7 +188,7 @@ width: 100%;
 /*contenedor de los 3 bloques de informacion*/
 .container__info-weather {
   width: 100%;
-  background-color: rgb(180, 166, 192);
+  background-color: rgb(188, 182, 193);
   display: flex;
   overflow: hidden;
   justify-content: space-around;
@@ -209,13 +209,15 @@ box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
 width: calc(100%/3);
 /* aspect-ratio: 1; */
 }
+
+
 /*contenedor del icono + dato*/
 .icon_data{
-  background-color: rgb(233, 46, 40);
+  /* background-color: rgb(233, 46, 40); */
   display: flex;
   padding: .1em;
   gap: .0em;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   
   
@@ -254,7 +256,8 @@ background-color: red;
 .btn{
 background-color:white;
 color: blue;
-border-radius: 25px;   
+border-radius: 25px;  
+padding: .5em 1.5em; 
     }
 
 
