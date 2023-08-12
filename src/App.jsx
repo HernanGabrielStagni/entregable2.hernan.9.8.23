@@ -10,7 +10,7 @@ function App() {
   const [latlon, setLatlon] = useState();
   const [weather, setWeather] = useState();
   const [temperature, setTemperature] = useState();
-  const [imgBack, setImgBack] = useState( {backgroundImage: `url('/public/img/mountains-small.png')`,
+  const [imgBack, setImgBack] = useState( {backgroundImage: `url('/img/mountains-small.png')`,
   });
 
   
