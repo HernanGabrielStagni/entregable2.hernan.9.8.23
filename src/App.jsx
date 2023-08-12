@@ -6,12 +6,15 @@ import WeatherCard from "./components/WeatherCard";
 import Loading from "./components/Loading";
 
 function App() {
-  //A los const los creo qui para que tengan existencia dentro de toda la funcion
+  //A los const los creo aqui para que tengan existencia dentro de toda la funcion
   const [latlon, setLatlon] = useState();
   const [weather, setWeather] = useState();
   const [temperature, setTemperature] = useState();
-  const [imgBack, setImgBack] = useState();
+  const [imgBack, setImgBack] = useState( {backgroundImage: `url('/public/img/mountains-small.png')`,
+  });
 
+  
+  
   useEffect(() => {
     const error = (err) => {
       console.log(err);
@@ -50,7 +53,7 @@ function App() {
     }
   }, [latlon]);
 
-  // const appStyles={backgroundImage:`url('/img/fondo${numImages}.jpg')`};
+
   const appStyles = {
     backgroundImage: `url('/img/${weather?.weather[0].icon}.jpeg')`,
   };
@@ -59,7 +62,7 @@ function App() {
 
   /*  ********************************************************        */
   return (
-    <div style={weather && appStyles} className="app">
+    <div style={(weather && appStyles) || imgBack} className="app">
      
       {weather ? (
         <WeatherCard weather={weather} temperature={temperature} />
