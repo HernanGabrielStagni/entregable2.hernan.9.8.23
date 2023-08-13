@@ -323,10 +323,10 @@ padding: .5em 1.5em;
   color: rgb(229, 110, 19);
 
 }
-
+/*   ****************************************              */
 @media (min-width: 400px)  {
 /*  CONTENEDOR GENERAL DESPUES DE App */
-.container{gap: 2.5rem;padding: 1em;}
+.container{gap: 2.2rem;padding: .5em;}
 
 /*numero de la temperatura en grande*/
 .temp__c_f{
