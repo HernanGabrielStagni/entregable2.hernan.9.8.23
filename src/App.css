@@ -352,65 +352,112 @@ gap: 1.em;
   
   
   }
+    
+/****************************************************************************************/
   @media (min-width: 450px)  {
     /*  CONTENEDOR GENERAL DESPUES DE App */
     .container{gap: 3.5em; padding: 2.5em;}
   }
 
-@media (min-width: 700px)  {
-   
-   
-  .App{
-     
-      gap: .5rem;
-      justify-content: center ;
-      max-width: 1024; 
-      
-  }
 
-  .container{
-   
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    max-width: 1024PX;
-    margin: auto;
+
+  /****************************************************************************************/
+/****************************************************************************************/  
+/*************************   (min-width: 650px )  *****************************************/  
+/****************************************************************************************/  
+/****************************************************************************************/
+
+
+@media (min-width: 650px)  {
+  /* ***************  CONTENEDOR PADRE *************** */ 
+  .App{justify-content: center ;max-width: 1024;} 
+
+/*  CONTENEDOR GENERAL DESPUES DE App */
+
+
+.container{gap: 3.5em; padding: 5em 5.5em;}
+
+
+/*  Contenedor " WEATHER app"  */
+.container__weather {
+  /* background-color: rgb(72, 48, 190); */
+  
+  display: grid;
+  grid-template-rows: auto; /* Altura automática */
+  grid-auto-flow: column; /* Coloca los elementos en una fila */
+  
+  padding: 1em;
+  gap: 10px; /* Espacio entre los títulos  */
+  margin-top: 2em;
+ 
   }
  
+.container__weather h2{align-self:last baseline;padding: .5em;}
+
+
+.container__body{
+  /* background-color: rgb(81, 74, 88); */
+  width: 100%;
+display: flex; 
+flex-direction: row;
+padding: 0 9em;
+gap: 1em;
+}
+
+/*contenedor #GENERAL# BODY BOTTON  3 bloques de informacion*/
+.container__info-weather {
+
+background-color: rgba(252, 37, 9, 0.979);
+display: flex;
+flex-direction: column;
+width: 30%;
+padding: .5em;
+}
+ 
+
+/*contenedor de "** CADA **  bloque" de informacion*/
+.info__weather{
+  width: 100%;
+  background-color: rgba(243, 140, 23, 0.72);
+  padding: .5em .3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+  width: calc(100%/3);
+
   
-    /**/
-   .card {
-    background-color: rgba(144, 141, 141, 0.609); 
-    padding:.5rem;
-    /* width:80%; */
-    margin: auto ;
-    margin-top: 1rem;
-    gap: 1rem;
-    max-width: 500PX;
-    max-height: 500px;
-   }
+  }
+  
+  .info__weather:nth-child(1) {
+    width: 100%;
+    border-radius: 15px 15px 0 0px;
+  }
+  .info__weather:nth-child(2) {
+    border-radius:  0 0 0 0;
+    width: 100%;
+  }
+  .info__weather:nth-child(3) {
+    border-radius:  0 0px 15px 15px;
+    width: 100%;
+  }
 
- /* Titulo de la temperatura- Numeros*/
- .card__body h2{
-  margin-top: 30px;
- color: rgb(241, 133, 10);
- font-size: 250%;
- text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
-}
-
-/*Propiedades del boton*/
-button{
-  width: 150px;
-font-size: 75%;
-font-weight: bold;
-color: rgb(213, 43, 43);
-padding: 5px;
-border: 1px solid var(--primary-color);
-border-radius: 5px;   
-box-shadow: 2PX 2PX 3px rgba(0, 0, 0, 0.3);
-border-bottom: none;
-margin-top: 25px;
+/* contenedor GENERAL "BODY TOP" _____"CLIMA" + "TEMPERAT + iCONO CLIMA" */
+.container__body-top{
+  background-color: rgba(208, 208, 27, 0.272);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3.5em  .5em;
+  gap: 2em;
+  border-radius: 25px;
 }
 
 
+
+
+
+ 
+  
+   
 }
