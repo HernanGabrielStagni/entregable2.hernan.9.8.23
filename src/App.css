@@ -319,8 +319,8 @@ padding: .5em 1.5em;
 
 /*numero de la temperatura en grande*/
   .temp__c_f{
-  font-size: 2.2em;
-  color: rgb(229, 110, 19);
+  font-size: 2.em;
+  color: rgb(71, 208, 34);
 
 }
 /*   ****************************************              */
@@ -379,9 +379,18 @@ gap: 1.em;
   }
     
 /****************************************************************************************/
-  @media (min-width: 450px)  {
+  @media (min-width: 500px)  {
     /*  CONTENEDOR GENERAL DESPUES DE App */
     .container{gap: 3.5em; padding: 2.5em;}
+
+
+ /*numero de la temperatura en grande*/
+.temp__c_f{
+  font-size: 2.1em;
+  color: rgb(208, 197, 214);
+
+}
+
   }
 
 
