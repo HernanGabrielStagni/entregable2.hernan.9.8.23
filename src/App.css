@@ -179,7 +179,7 @@ text-align: center;
 margin: auto;
 color: rgb(236, 169, 44);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
-  font-size:2.3rem;
+  font-size:2rem;
   font-weight: 2px;
   /* aspect-ratio: 1; */
   padding: 0em;
@@ -315,12 +315,26 @@ padding: .5em 1.5em;
 
     /*  ############  BOTON CAMBIO CELSIUS A FARAD.  ################  */
     .btn{font-size: 1em; padding: .5em 1.5em;}
+    /* texto grande Temperatura  NUMERO GRANDE  eJ. cel 6.2°  ***  °C y °F*/
+
+/*numero de la temperatura en grande*/
+  .temp__c_f{
+  font-size: 2.2em;
+  color: rgb(229, 110, 19);
 
 }
 
 @media (min-width: 400px)  {
 /*  CONTENEDOR GENERAL DESPUES DE App */
 .container{gap: 2.5rem;padding: 1em;}
+
+/*numero de la temperatura en grande*/
+.temp__c_f{
+  font-size: 2.1em;
+  color: rgb(229, 110, 19);
+
+}
+
 
 /* "valor numerico" de la TEXTO Ej."3.82" info*/
 .info__weather span{font-size: 1.8rem;}
@@ -346,6 +360,17 @@ padding: .5em 1.5em;
   padding: 2em 0 ;
 gap: 1.em; 
 }
+
+
+/*numero de la temperatura en grande*/
+.temp__c_f{
+  font-size: 2.1em;
+  color: rgb(102, 51, 130);
+
+}
+
+}
+
     /*  ############  BOTON CAMBIO CELSIUS A FARAD.  ################  */
     .btn{font-size: 1em; padding: .5em 1.5em;}
   
