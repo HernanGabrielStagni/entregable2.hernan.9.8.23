@@ -32,14 +32,16 @@ h1,h2,h3,h4, p, span {
 
 /*  contenedor general con el fondo*/
 .app{
-  width: 10;
-  height: 100vh;
-  background-size: cover; 
+  width: 100%;
+  min-height: 100vh;
 
+  background-size: cover; 
   background-position: center;
-  padding: .5rem;
-  box-sizing: border-box;
-  overflow: hidden;
+
+  padding: 1rem;
+  box-sizing: ;
+
+display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -47,7 +49,7 @@ h1,h2,h3,h4, p, span {
   } 
 
 
-/*contenedor recuadro interno del fondo*/
+/**    contenedor recuadro interno fondo  de los elementos*/
 .container{
   /* background-color: rgba(255, 0, 0, 0.178); */
   display: flex;
@@ -55,10 +57,7 @@ h1,h2,h3,h4, p, span {
   padding: 0rem ;
   justify-content: center;
   align-items: center;
- 
-  margin: auto;
-  height: 80vh;
-  gap: 1.5em;
+   gap: 1em;
 } 
 
 
@@ -76,8 +75,6 @@ h1,h2,h3,h4, p, span {
   display: grid;
   justify-content: center;
   text-align: center;
-  margin-top: -20px; 
-  
   }
 
 
@@ -90,7 +87,7 @@ h1,h2,h3,h4, p, span {
 }
 /*Titulo " WEATHER app  "eathe" */
 .container__weather h1{
- margin-top: 1em;
+ /* margin-top: 1em; */
   color: rgb(244, 141, 8);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
   font-size:1.8rem;
@@ -118,8 +115,6 @@ h1,h2,h3,h4, p, span {
   text-shadow: 1px 1px  3px  rgb(251, 250, 250);
   font-size:1.3rem;
   font-weight: 2px;
-  margin-bottom: -1em;
-  margin-top: -1.4em;
   padding: 3px 15px;
   border-radius: 10px;
 }
@@ -128,8 +123,6 @@ h1,h2,h3,h4, p, span {
 /* ###############################################  */
 /* contenedor DE "BODY TOP"+ "BODY BOTTON" */
 .container__body{
-  /* background-color: rgb(81, 74, 88); */
-  width: 100%;
 display: flex; 
 flex-direction: column;
 gap: 1em;
@@ -142,17 +135,20 @@ gap: 1em;
   display: flex;
   flex-direction: column;
   padding: 1.2em  .5em;
-  gap: .0em;
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+
   border-radius: 25px;
 }
 
 /* texto estado del clima TAMAÑO GRANDE*/
 .container__body-top-description{
   /* background-color: red; */
+  display: flex;
   text-align: center;
-  color: rgb(243, 120, 6);
+  justify-content: center;
+  color: rgb(163, 80, 2);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
-  font-size:1.5rem;
+  font-size:1.7rem;
   letter-spacing: 1.5px;
   font-weight: 2px;
 
@@ -161,8 +157,7 @@ gap: 1em;
 
 /* contenedor Temperatura NUMERO GRANDE + EL ICONO DEL CLIMA*/
 .container__body-top-temper_icon{
-  /* background-color: rgb(84, 173, 94); */
-  display: flex;
+   display: flex;
   justify-content: center;
   padding: .5em;
 }
@@ -174,7 +169,7 @@ width: 100%;
 justify-content: center;
 text-align: center;
 margin: auto;
-color: rgb(236, 169, 44);
+color: rgb(243, 122, 9);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
   font-size:2rem;
   font-weight: 2px;
@@ -206,15 +201,15 @@ width: 100%;
 
 /*contenedor #GENERAL# BODY BOTTON  3 bloques de informacion*/
 .container__info-weather {
-  width: 100%;
+  /* width: 100%; */
   background-color: rgba(186, 184, 187, 0.26);
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   justify-content: space-around;
   border-radius: 15px;
   padding: .7em .5em;
   gap: .1em;
-  margin-bottom: -1em;
+ 
 }
 
 
@@ -227,7 +222,7 @@ display: flex;
 flex-direction: column;
 box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
 width: calc(100%/3);
-/* aspect-ratio: 1; */
+
 }
 
 .info__weather:nth-child(1) {
@@ -295,10 +290,10 @@ margin-top: 0em;
 /************                   *************/
 /********************************************/
 /********************************************/
+/**************************************************************/
 
 @media (min-width: 320px)  {
-/*  CONTENEDOR GENERAL DESPUES DE App */
-  .container{gap: 1.6rem; padding: .5em;}
+
 
   /* "valor numerico" de la TEXTO Ej."3.82" info*/
   .info__weather span{font-size: 1.5rem;}
@@ -316,18 +311,18 @@ margin-top: 0em;
 /*numero de la temperatura en grande*/
   .temp__c_f{
   font-size: 2.em;
-  color: rgb(71, 208, 34);
-
+  color: rgb(243, 122, 9);
+  }
 }
+
 /*   ****************************************              */
 @media (min-width: 400px)  {
-/*  CONTENEDOR GENERAL DESPUES DE App */
-.container{gap: 2.2rem;padding: .5em;}
+
 
 /*numero de la temperatura en grande*/
 .temp__c_f{
   font-size: 2.1em;
-  color: rgb(229, 19, 23);
+  color: rgb(243, 122, 9);
 
 }
 
@@ -339,7 +334,7 @@ margin-top: 0em;
 .info__weather h2{font-size: 1.3em;}
 
 /*TEXTO eJ. "PRESURE" parametro del tiempo*/
-  .info__weather h3{font-size: 1.3em;}
+  /* .info__weather h3{font-size: 1.3em;} */
 
   /*  ############  BOTON CAMBIO CELSIUS A FARAD.  ################  */
   .btn{font-size: 1em; padding: .5em 1.5em;}
@@ -347,47 +342,36 @@ margin-top: 0em;
   
 /****************************************************************************************/
 @media (min-width: 450px)  {
-  /*  CONTENEDOR GENERAL DESPUES DE App */
-  .container{gap: 3.5em; padding: 1.5em;}
-  
+   
 /* contenedor GENERAL "BODY TOP" _____"CLIMA" + "TEMPERAT + iCONO CLIMA" */
 .container__body-top{
- 
-  padding: 2em 0 ;
-gap: 1.em; 
+ padding: 1em 0 ;
+gap: 1.0em; 
 }
 
 
 /*numero de la temperatura en grande*/
 .temp__c_f{
   font-size: 2.1em;
-  color: rgb(102, 51, 130);
-
+  color: rgb(243, 122, 9);
 }
 
-}
 
     /*  ############  BOTON CAMBIO CELSIUS A FARAD.  ################  */
     .btn{font-size: 1em; padding: .5em 1.5em;}
+    }
   
-  
-  
-  }
-    
 /****************************************************************************************/
   @media (min-width: 500px)  {
-    /*  CONTENEDOR GENERAL DESPUES DE App */
-    .container{gap: 3.5em; padding: 2.5em;}
-
-
+    
  /*numero de la temperatura en grande*/
 .temp__c_f{
-  font-size: 2.1em;
-  color: rgb(208, 197, 214);
+  font-size: 1.8em;
+  color: rgb(243, 122, 9);
+  }
+
 
 }
-
-  }
 
 
 
@@ -399,69 +383,72 @@ gap: 1.em;
 
 
 @media (min-width: 650px)  {
+ 
   /* ***************  CONTENEDOR PADRE *************** */ 
-  .App{justify-content: center ;max-width: 1024;} 
 
-/*  CONTENEDOR GENERAL DESPUES DE App */
-
-
-.container{gap: 3.5em; padding: 5em 5.5em;}
-
-
-/*  Contenedor " WEATHER app"  */
+/*  Contenedor Titulo principal pagina " WEATHER app"  */
 .container__weather {
-  /* background-color: rgb(72, 48, 190); */
-  
   display: grid;
   grid-template-rows: auto; /* Altura automática */
   grid-auto-flow: column; /* Coloca los elementos en una fila */
-  
   padding: 1em;
-  gap: 10px; /* Espacio entre los títulos  */
-  margin-top: 2em;
- 
-  }
- 
+    }
+
+ /*  Titulo principal pagina " App"  */
 .container__weather h2{align-self:last baseline;padding: .5em;}
 
-
+/*########## CONTENEDOR DEL BLOQUE MEDIO QUE SE REACOMODA   CONTENEDOR SUPERIOR Y CONTENEDOR INFERIOR CON LA INFO ############*/
 .container__body{
-  /* background-color: rgb(81, 74, 88); */
-  width: 100%;
+max-width:700px ;
 display: flex; 
 flex-direction: row;
-padding: 0 9em;
-gap: 1em;
+padding: 1em 1em;
+gap: .5em;
+border-radius: 10%;
 }
 
-/*contenedor #GENERAL# BODY BOTTON  3 bloques de informacion*/
-.container__info-weather {
+/*   contenedor del titulo del clima en el body top*/
+.container__body-top-description {
+ /* background-color: rebeccapurple; */
+justify-content:center;
+height: 28px;
+} 
 
-background-color: rgba(252, 37, 9, 0.979);
+/* "valor numerico" de la TEXTO Ej."3.82" info*/
+.info__weather span{font-size: 1.8rem;}
+
+/*contenedor #GENERAL#   "3 RECTANGULOS" de informacion*/
+.container__info-weather {
+/* background-color: rebeccapurple; */
 display: flex;
 flex-direction: column;
-width: 30%;
 padding: .5em;
 }
  
 
-/*contenedor de "** CADA **  bloque" de informacion*/
+/*contenedor de "** CADA RECTANGULO **  bloque" de informacion*/
 .info__weather{
   width: 100%;
-  background-color: rgba(243, 140, 23, 0.72);
-  padding: .5em .3em;
+  background-color: rgba(182, 181, 180, 0.211);
+  padding: .5em .7em;
+  gap: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
-  width: calc(100%/3);
+  /* width: calc(100%/3); */
 
   
   }
   
+  .icon_data span{
+    font-size: 1.8em;
+
+  }
   .info__weather:nth-child(1) {
     width: 100%;
     border-radius: 15px 15px 0 0px;
+   
   }
   .info__weather:nth-child(2) {
     border-radius:  0 0 0 0;
@@ -472,9 +459,10 @@ padding: .5em;
     width: 100%;
   }
 
+
 /* contenedor GENERAL "BODY TOP" _____"CLIMA" + "TEMPERAT + iCONO CLIMA" */
 .container__body-top{
-  background-color: rgba(208, 208, 27, 0.272);
+  /* background-color: rgba(208, 208, 27, 0.272); */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -482,12 +470,77 @@ padding: .5em;
   gap: 2em;
   border-radius: 25px;
 }
+ 
 
 
+}
 
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
+@media (min-width: 800px)  {
+  /* ***************  CONTENEDOR PADRE *************** */ 
 
  
   
+   /*  Titulo principal pagina " App"  */
+  .container__weather h2{align-self:last baseline;padding: .5em;}
+  
+  /*########## CONTENEDOR DEL BLOQUE MEDIO QUE SE REACOMODA   CONTENEDOR SUPERIOR Y CONTENEDOR INFERIOR CON LA INFO ############*/
+  .container__body{
+     max-width:700px ;
+   }
+  
+ 
+  
+  /*contenedor de "** CADA RECTANGULO **  bloque" de informacion*/
+  .info__weather{
+    
+    border: none;
+    box-shadow: none;
+    border-bottom: 3px solid rgba(168, 165, 165, 0.755);
+     padding: .5em .9em;
    
-}
+  
+    
+    }
+    
+    .icon_data span{
+      font-size: 1.8em;
+      font-weight: 600;
+  
+    }
+    .info__weather:nth-child(1) {
+      width: 100%;
+      border-radius: 15px 15px 0 0px;
+     
+    }
+    .info__weather:nth-child(2) {
+      border-radius:  0 0 0 0;
+      
+      width: 100%;
+    }
+    .info__weather:nth-child(3) {
+      border-radius:  0 0px 15px 15px;
+      width: 100%;
+    }
+  
+  
+  
+  
+  
+  /* contenedor GENERAL "BODY TOP" _____"CLIMA" + "TEMPERAT + iCONO CLIMA" */
+  .container__body-top{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3.5em  .5em;
+    gap: 2em;
+    border-radius: 25px;
+  }
+   
+  }
+  
+
