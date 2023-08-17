@@ -11,10 +11,10 @@ const WeatherCard = ({ weather, temperature }) => {
     <div className="container">
       {/*  ********************************************************************* TITULO WEATHER */}
        
-       <div className="container__weather">
+       <title className="container__weather">
          <h1><span>W</span>EATHE<span>R</span> </h1>
                 <h2> App </h2>
-      </div>
+      </title>
        
         
       
@@ -25,7 +25,7 @@ const WeatherCard = ({ weather, temperature }) => {
       <div className="container__body">
 
          {/*  ********************************************************************* CONTENEDOR BODY SUPERIOR */}
-        <div className="container__body-top">
+        <section className="container__body-top">
           <h3 className="container__body-top-description">{weather?.weather[0].description}</h3>
          
           <div className="container__body-top-temper_icon">
@@ -45,11 +45,11 @@ const WeatherCard = ({ weather, temperature }) => {
           
           </div>            
          
-        </div>    
+        </section>    
        
        
         {/*  **************************************************** CONTENEDOR BODY INFERIOR (informacion clima) */}
-        <div className="container__info-weather">
+        <section className="container__info-weather">
           
 
           <article className="info__weather">
@@ -83,7 +83,7 @@ const WeatherCard = ({ weather, temperature }) => {
              <h3>Pressure</h3>
           </article>   
 
-        </div> 
+        </section> 
 
        </div>
   

@@ -62,7 +62,7 @@ function App() {
 
   /*  ********************************************************        */
   return (
-    <div style={(weather && appStyles) || imgBack} className="app">
+    <div className="app" style={(weather && appStyles) || imgBack} >
      
       {weather ? (
         <WeatherCard weather={weather} temperature={temperature} />
